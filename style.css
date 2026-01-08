@@ -81,9 +81,6 @@ header {
   padding: 15px 0;
 }
 .header-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
