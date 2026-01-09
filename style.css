@@ -345,6 +345,7 @@ header {
   font-size: 45px;
   font-weight: 700;
   color: black;
+  text-transform: capitalize;
 }
 .clearly-main-section .clearly-text-container p {
   font-size: 17px;
