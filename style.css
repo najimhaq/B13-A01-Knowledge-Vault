@@ -23,26 +23,6 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-.btn {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--color-white);
-  background-color: #f15b22;
-  border: none;
-  border-radius: 5px;
-  padding: 21px 26px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background-color: #d94a1a;
-}
-.section-bottom-mergin {
-  margin-bottom: 30px;
-}
 /* == Button === */
 .btn-primary {
   background-color: #30b868;
@@ -85,7 +65,6 @@ body {
   transform: translateY(-3px);
   box-shadow: 0px 0px 5px #30b868, 0px 0px 10px #30b868 inset;
 }
-
 /* === Main Css=== */
 /* === Header Section Start === */
 header {
@@ -232,6 +211,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  cursor: pointer;
 }
 
 
@@ -270,7 +250,7 @@ header {
 
 .notes-section .notes-card .notes-card-content h4 {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: black;
   text-align: center;
@@ -290,6 +270,67 @@ header {
 /* === Brain Image Section End */
 .brain-str-section{
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 50px;
+  padding: 120px 0;
+}
+.brain-text-content{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.brain-str-section .brain-text-content .main-text h6{
+  color: #30b868;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.brain-str-section .brain-text-content .main-text h1{
+  color: black;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.brain-str-section .brain-text-content .main-text p{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.brain-text-content .text-point p{
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.brain-text-content .text-point p i{
+  margin-right: 5px;
+  color: #30b868;
 }
 /* === Brain ImageSection End */
+/* === clearly ImageSection Start */
+.clearly-main-section{
+  background-color: #f7f6f2; 
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.clearly-main-section .clearly-text-container{
+padding: 80px 40px;
+display: flex;
+gap: 30px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.clearly-main-section .clearly-text-container h1{
+  font-size: 45px;
+  font-weight: 700;
+  color: black;
+}
+.clearly-main-section .clearly-text-container p{
+font-size: 17px;
+font-weight: 500;
+color: #627382;
+text-align: center;
+}
+/* === clearly ImageSection End */
