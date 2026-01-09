@@ -37,12 +37,12 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, #1ad957, #00c850e6);
   transform: translateY(-3px);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
 .btn-outline {
   background: none;
@@ -69,13 +69,8 @@ body {
 /* === Header Section Start === */
 header {
   padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  /* border-bottom: 1px solid rgba(13, 255, 0, 0.1); */
 }
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -99,24 +94,20 @@ header {
   display: flex;
   align-items: center;
 }
-
 .header-menu ul {
   display: flex;
   gap: 25px;
   list-style: none;
   align-items: center;
 }
-
 .header-menu li {
   text-decoration: none;
 }
-
 .header-container .header-menu ul li {
   list-style: none;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
-
 .header-container .header-menu ul li:hover {
   transform: scale(1.05);
 }
@@ -187,6 +178,7 @@ header {
   gap: 20px;
 }
 /* === Hero Section End === */
+
 /* === Notes Section Start */
 .notes-section {
   text-align: center;
@@ -229,7 +221,6 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .notes-section .notes-card .notes-card-content:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
@@ -263,6 +254,7 @@ header {
   max-width: 240px;
 }
 /* === Notes Section End */
+
 /* === Brain Image Section Start */
 .brain-str-section {
   display: flex;
@@ -304,11 +296,12 @@ header {
   color: #30b868;
 }
 /* === Brain ImageSection End */
+
 /* === clearly ImageSection Start */
 .clearly-main-section {
   background-color: #f7f6f2;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 .clearly-main-section .clearly-text-container {
   padding: 80px 40px;
@@ -354,7 +347,7 @@ header {
 
 .footer-container .footer-logo-social .footer-logo:hover {
   transform: translateY(-3px);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(95, 101, 106, 0.2) 0px 8px 24px;
   cursor: pointer;
 }
 .footer-container .footer-logo-social .footer-icon h5 {
