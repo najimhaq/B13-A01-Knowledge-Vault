@@ -136,6 +136,7 @@ header {
 }
 .overly-img {
   border-image: linear-gradient(hsl(209, 20%, 90%), hsl(204, 17%, 94%)) 1;
+  border: none;
 }
 .hero-container {
   display: flex;
