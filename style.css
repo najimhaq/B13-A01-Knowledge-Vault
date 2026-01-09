@@ -73,13 +73,17 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(13, 255, 0, 0.1);
+  /* border-bottom: 1px solid rgba(13, 255, 0, 0.1); */
 }
 
 .header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
   padding: 15px 0;
 }
 .header-logo {
@@ -213,8 +217,6 @@ header {
   gap: 20px;
   cursor: pointer;
 }
-
-
 .notes-section .notes-card .notes-card-content {
   display: flex;
   flex-direction: column;
@@ -224,16 +226,14 @@ header {
   padding: 25px;
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .notes-section .notes-card .notes-card-content:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
-
-
 .notes-section .notes-card .notes-card-content span,
 .notes-section .notes-card .notes-card-content i {
   display: flex;
@@ -246,8 +246,6 @@ header {
   border-radius: 50%;
   font-size: 24px;
 }
-
-
 .notes-section .notes-card .notes-card-content h4 {
   margin: 0;
   font-size: 20px;
@@ -256,8 +254,6 @@ header {
   text-align: center;
   text-transform: capitalize;
 }
-
-
 .notes-section .notes-card .notes-card-content p {
   margin: 0;
   font-size: 18px;
@@ -267,25 +263,25 @@ header {
   max-width: 240px;
 }
 /* === Notes Section End */
-/* === Brain Image Section End */
-.brain-str-section{
+/* === Brain Image Section Start */
+.brain-str-section {
   display: flex;
   align-items: center;
   gap: 50px;
   padding: 120px 0;
 }
-.brain-text-content{
-display: flex;
-flex-direction: column;
-gap: 30px;
+.brain-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.brain-str-section .brain-text-content .main-text h6{
+.brain-str-section .brain-text-content .main-text h6 {
   color: #30b868;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.brain-str-section .brain-text-content .main-text h1{
+.brain-str-section .brain-text-content .main-text h1 {
   color: black;
   font-size: 55px;
   font-weight: 700;
@@ -293,44 +289,116 @@ gap: 30px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.brain-str-section .brain-text-content .main-text p{
+.brain-str-section .brain-text-content .main-text p {
   font-size: 17px;
   font-weight: 400;
   line-height: 22px;
 }
-.brain-text-content .text-point p{
+.brain-text-content .text-point p {
   margin-bottom: 12px;
   font-size: 17px;
   font-weight: 500;
 }
-.brain-text-content .text-point p i{
+.brain-text-content .text-point p i {
   margin-right: 5px;
   color: #30b868;
 }
 /* === Brain ImageSection End */
 /* === clearly ImageSection Start */
-.clearly-main-section{
-  background-color: #f7f6f2; 
+.clearly-main-section {
+  background-color: #f7f6f2;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.clearly-main-section .clearly-text-container{
-padding: 80px 40px;
-display: flex;
-gap: 30px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.clearly-main-section .clearly-text-container {
+  padding: 80px 40px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.clearly-main-section .clearly-text-container h1{
+.clearly-main-section .clearly-text-container h1 {
   font-size: 45px;
   font-weight: 700;
   color: black;
 }
-.clearly-main-section .clearly-text-container p{
-font-size: 17px;
-font-weight: 500;
-color: #627382;
-text-align: center;
+.clearly-main-section .clearly-text-container p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #627382;
+  text-align: center;
 }
 /* === clearly ImageSection End */
+
+/*  === Footer section Start */
+.footer-container {
+  background-color: #001931;
+  padding: 120px 0px 30px 0px;
+}
+
+.footer-container .footer-logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 85px;
+}
+.footer-container .footer-logo-social .footer-logo {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-container .footer-logo-social .footer-logo:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+.footer-container .footer-logo-social .footer-icon h5 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.footer-container .footer-logo-social .footer-icon .social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-container .footer-logo-social .footer-icon .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 100px;
+  color: black;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-container .footer-logo-social .footer-icon .social-icons a:hover {
+  background-color: #30b868;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.footer-container .footer-border {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 30px;
+  opacity: 0.2;
+}
+.footer-container .footer-text p {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+/* === Footer section End */
