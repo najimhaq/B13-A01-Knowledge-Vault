@@ -78,7 +78,6 @@ body {
   align-items: center;
   gap: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
 }
 
 .btn-outline:hover {
@@ -152,7 +151,7 @@ header {
 /* === Header Section End === */
 
 /* === Hero Section Start === */
-.hero{
+.hero {
   background-image: url(./assets/hero-bg.png);
   background-size: cover;
   background-position: center;
@@ -162,10 +161,7 @@ header {
   padding: 75px 120px 120px 130px;
 }
 .overly-img {
-  border-image: linear-gradient(
-    hsl(209, 20%, 90%), 
-    hsl(204, 17%, 94%)
-  ) 1;
+  border-image: linear-gradient(hsl(209, 20%, 90%), hsl(204, 17%, 94%)) 1;
 }
 .hero-container {
   display: flex;
@@ -174,7 +170,7 @@ header {
   align-items: center;
   text-align: center;
 }
-.hero-container .hero-info .access-btn{
+.hero-container .hero-info .access-btn {
   margin-bottom: 18px;
   color: #30b868;
   text-transform: capitalize;
@@ -188,7 +184,7 @@ header {
   font-size: 70px;
   font-weight: 700;
   text-transform: capitalize;
-   margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .hero-container .hero-info h1 span {
   color: #30b868;
@@ -196,17 +192,104 @@ header {
   font-style: 700;
   font-weight: bold;
   text-transform: capitalize;
- 
 }
 .hero-container .hero-info p {
   color: white;
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 30px;
- 
 }
-.hero-container .hero-btn{
+.hero-container .hero-btn {
   display: flex;
   gap: 20px;
 }
 /* === Hero Section End === */
+/* === Notes Section Start */
+.notes-section {
+  text-align: center;
+  margin-top: 50px;
+}
+.notes-section .notes-text-content h1 {
+  color: black;
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.notes-section .notes-text-content p {
+  color: #627382;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.notes-section .notes-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20;
+}
+.notes-section .notes-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+.notes-section .notes-card .notes-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notes-section .notes-card .notes-card-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+
+.notes-section .notes-card .notes-card-content span,
+.notes-section .notes-card .notes-card-content i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f95555;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+
+.notes-section .notes-card .notes-card-content h4 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+.notes-section .notes-card .notes-card-content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #627382;
+  text-align: center;
+  max-width: 240px;
+}
+/* === Notes Section End */
+/* === Brain Image Section End */
+.brain-str-section{
+  display: flex;
+  gap: 25px;
+}
+/* === Brain ImageSection End */
