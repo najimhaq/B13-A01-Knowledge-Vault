@@ -24,26 +24,6 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  color: #30b868;
-  font-size: 65px;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
-h2 {
-  color: var(--color-dark);
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
-
-p {
-  color: black;
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 32px;
-}
-
 .btn {
   font-size: 20px;
   font-weight: 600;
@@ -61,10 +41,54 @@ p {
   background-color: #d94a1a;
 }
 .section-bottom-mergin {
-  margin-bottom: 130px;
+  margin-bottom: 30px;
+}
+/* == Button === */
+.btn-primary {
+  background-color: #30b868;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1ad957, #00c850e6);
+  transform: translateY(-3px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.btn-outline {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+
+.btn-outline:hover {
+  border: 3px solid #30b868;
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 5px #30b868, 0px 0px 10px #30b868 inset;
 }
 
 /* === Main Css=== */
+/* === Header Section Start === */
 header {
   padding: 10px 0;
   position: sticky;
@@ -125,31 +149,64 @@ header {
   color: #30b868;
   cursor: pointer;
 }
+/* === Header Section End === */
 
-
-.header-btn {
-  background: linear-gradient(
-    135deg,
-   rgb(48, 184, 104) ,
-    rgba(48, 184, 104,0.8)
-  );
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 28px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+/* === Hero Section Start === */
+.hero{
+  background-image: url(./assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  text-align: center;
+  padding: 75px 120px 120px 130px;
+}
+.overly-img {
+  border-image: linear-gradient(
+    hsl(209, 20%, 90%), 
+    hsl(204, 17%, 94%)
+  ) 1;
+}
+.hero-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  letter-spacing: 0.5px;
+  text-align: center;
 }
-
-.header-btn:hover {
-  background: linear-gradient(135deg, #1ad957, rgba(0, 200, 80, 0.9));
-  transform: translateY(-3px);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.hero-container .hero-info .access-btn{
+  margin-bottom: 18px;
+  color: #30b868;
+  text-transform: capitalize;
+  padding: 9px 15px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
 }
+.hero-container .hero-info h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: capitalize;
+   margin-bottom: 20px;
+}
+.hero-container .hero-info h1 span {
+  color: #30b868;
+  font-size: 75px;
+  font-style: 700;
+  font-weight: bold;
+  text-transform: capitalize;
+ 
+}
+.hero-container .hero-info p {
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+ 
+}
+.hero-container .hero-btn{
+  display: flex;
+  gap: 20px;
+}
+/* === Hero Section End === */
