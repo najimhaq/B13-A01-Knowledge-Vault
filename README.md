@@ -143,6 +143,8 @@
 ## 📂 Submission Format
 
 - **GitHub Repository Link**
+link :  https://github.com/najimhaq/B13-A01-Knowledge-Vault
 - **Live Website Link (GitHub Pages)**
+link: https://najimhaq.github.io/B13-A01-Knowledge-Vault/
 
 ---
